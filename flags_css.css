@@ -1,0 +1,443 @@
+body,html{
+    height: 100%;
+}
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+h2
+{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(152, 197, 125);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+}
+.Ethiopias-flag{
+    margin: 20px auto;
+    padding: 100px;
+    width: 30%;
+    background-color: yellow;
+    position: relative;
+}
+.Ethiopias-flag:after{
+    content: " ";
+    width: 100%;
+    height: 33.3%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right:  0;
+
+}
+.Ethiopias-flag:before{
+    content: " ";
+    width: 100%;
+    height: 33.33%;
+    background-color: green;
+    position: absolute;
+    top:  0;
+    left: 0;
+}
+/* ----------------------------------- */
+.benin-flag{
+    margin: 20px auto;
+    padding: 100px;
+    width: 30%;
+    background-color: green;
+    position: relative;
+}
+.benin-flag:after{
+    content: " ";
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.benin-flag:before{
+    content: " ";
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    position: absolute;
+    top:  0;
+    right: 0;
+}
+
+/* ----------------------------------- */
+.andorra-flag{
+    margin: 20px auto;
+    padding: 100px;
+    width: 30%;
+    background-color:yellow;
+    position: relative;
+}
+.andorra-flag:after{
+    content: " ";
+    width: 33.33%;
+    height: 100%;
+    background-color: rgb(75, 16, 151);
+    position: absolute;
+    left:  0;
+    top: 0;
+}
+.andorra-flag:before{
+    content: " ";
+    width: 33.33%;
+    height: 100%;
+    background-color: rgb(255, 0, 76);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/* -----------------India------------------ */
+.flag{
+    margin: 20px auto;
+    width: 400px;
+    position: relative;
+}
+.flag li{
+    
+    list-style-type: none;
+    height: 150px;
+    width: 50;
+}
+li:nth-child(1){
+    background-color: rgb(210, 102, 30);
+}
+li:nth-child(2){
+    background-color: rgb(255, 255, 255);
+}
+li:nth-child(3){
+    background-color: rgb(81, 210, 30);
+}
+li #middle-star{
+    height: 140px;
+    width: 140px;
+    border: 3px solid blue;
+    border-radius: 50%;
+    margin: 2px auto;
+}
+#middle-star div{
+    position: relative;
+    border: 1px solid blue;
+}
+#div1{
+    top: 70px;
+}
+#div2{
+    top: 68px;
+    transform: rotate(90deg);
+}
+#div3{
+    top: 66px;
+    transform: rotate(15deg);
+}
+#div4{
+    top: 64px;
+    transform: rotate(30deg);
+}
+#div5{
+    top: 62px;
+    transform: rotate(45deg);
+}
+#div6{
+    top: 60px;
+    transform: rotate(60deg);
+}
+#div7{
+    top: 58px;
+    transform: rotate(75deg);
+}
+#div8{
+    top: 56px;
+    transform: rotate(-15deg);
+}
+#div9{
+    top: 54px;
+    transform: rotate(-30deg);
+}
+#div10{
+    top: 52px;
+    transform: rotate(-45deg);
+}
+#div11{
+    top: 50px;
+    transform: rotate(-60deg);
+}
+#div12{
+    top: 48px;
+    transform: rotate(-75deg);
+}
+
+/* ----------------------------------- */
+#bangladish{
+
+margin: 10px auto;
+padding: 70px;
+width: 300px;
+background-color: rgb(8, 87, 57);
+}
+#bangladish-circle{
+margin: 20px auto;
+position: relative;
+width: 100px;
+height: 100px;
+background-color: rgb(136, 9, 16);
+border:3px solid rgb(136, 9, 16);
+border-radius: 50%;
+
+}
+/* -------------the whole containers---------------------- */
+.container{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+} 
+.container > div{
+width: 100%;
+} 
+#bulgaria{
+padding: 100px;
+width: 30%;
+margin: 20px auto;
+background-color: rgb(4, 109, 74);
+position: relative;
+    }
+
+/* ----------------------------------- */
+#bulgaria:before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 33.33%;
+        background-color: rgb(255, 255, 255);
+        top:0;
+        left: 0;
+
+    }
+#bulgaria:after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 33.33%;
+        background-color: rgb(196, 24, 47);
+        bottom:0;
+        left: 0;
+
+    }
+
+/* ----------------------------------- */
+#bahamas{
+margin: 20px auto;
+position:relative;
+background-image:linear-gradient(#00abc9 33%,#fae042 33%,#fae042 66%,#00abc9 66%); 
+width:400px;
+height:150px}
+
+#bahamas .triangle{
+border-left: 90px solid black;
+border-top: 80px solid transparent;
+border-bottom:80px solid transparent;
+}
+
+/* ----------------------------------- */
+#burkina-faso{
+    margin: 20px auto;
+    position:relative;
+    background-image: linear-gradient(#ef2b2d 50%,#009e49 50%);
+    width:400px;
+    height:150px}
+#burkina-faso .star{
+    width:0;
+    height:0;
+    margin: 30px auto;
+    border-right:50px solid transparent;
+    border-bottom:35px solid #fcd116;
+    border-left:50px solid transparent;
+    transform:rotate(35deg) scale(0.46,.46);}
+#burkina-faso .star:before{
+    content:'';
+    display:block;
+    position:absolute;
+    top:-22.5px;left:-32.5px;
+    height:0;
+    width:0;
+    border-bottom:40px solid #fcd116;
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    transform:rotate(-35deg);}
+#burkina-faso .star:after{
+    content:'';
+    display:block;
+    position:absolute;
+    top:3px;left:-52.5px;
+    width:0;
+    height:0;
+    border-right:50px solid transparent;
+    border-bottom:35px solid #fcd116;
+    border-left:50px solid transparent;
+    transform:rotate(-70deg);} 
+
+/* ----------------------------------- */
+
+#cuba{
+    margin: 20px auto;
+    position:relative;
+    background-image:linear-gradient(#002a8f 20%,#fff 20%,#fff 40%,#002a8f 40%,#002a8f 60%,#fff 60%,#fff 80%,#002a8f 80%);
+    width:400px;height:150px}
+#cuba .triangle{top:0;left:0;width:0;height:0;
+            border-top:75px solid transparent;
+            border-bottom:75px solid transparent;
+            border-left:130px solid #cf142b}
+#cuba .star{
+    top:7px;left:0;width:0;height:0;
+    border-right:50px solid transparent;
+    border-bottom:35px solid #fff;
+    border-left:50px solid transparent;
+    transform:rotate(35deg) scale(0.42,.42)}
+#cuba .star:before{content:'';display:block;position:absolute;
+    top:-22.5px;left:-32.5px;height:0;width:0;
+    border-bottom:40px solid #fff;
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    transform:rotate(-35deg)}
+#cuba .star:after{content:'';display:block;position:absolute;top:3px;
+    left:-52.5px;width:0;height:0;
+    border-right:50px solid transparent;
+    border-bottom:35px solid #fff;
+    border-left:50px solid transparent;
+    transform:rotate(-70deg)}
+
+/* ----------------------------------- */
+
+.russia{
+    margin: 20px auto;
+    width: 30%;
+    padding:100px;
+    position: relative;
+    background-color: rgb(11, 13, 179);
+}
+.russia:before{
+    content: " ";
+    width: 100%;
+    height: 33.33%;
+    background-color: rgb(236, 4, 62);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.russia:after{
+    content: " ";
+    width: 100%;
+    height: 33.33%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* ----------------------------------- */
+#brazil{
+    position:relative;
+    background-color:#16b83e;
+    width:250px;
+    height:150px}
+#brazil .circle,#brazil .middle-square:before,#brazil .middle-square:after{
+    position:absolute}
+#brazil .middle-square{
+    width:100%;
+    height:100%;
+    top:0;bottom:0;left:0;right:0}
+#brazil .middle-square:before,#brazil .middle-square:after{
+    content:'';width:0;height:0;left:20px;right:20px}
+#brazil .middle-square:before{border-left:105px solid transparent;
+    border-right:105px solid transparent;
+    border-bottom:65px solid #ffe11f;
+    top:10px}
+#brazil .middle-square:after{
+    border-left:105px solid transparent;
+    border-right:105px solid transparent;
+    border-top:65px solid #ffe11f;bottom:10px}
+#brazil .circle{
+    overflow:hidden;
+    z-index:2;display:
+    block;background-color:#1651b8;
+    height:80px;width:80px;margin-top:-40px;
+    margin-left:-40px}
+#brazil .circle,#brazil .circle:before,#brazil .circle:after{
+    top:50%;left:50%;position:absolute;
+    border-radius:50%;
+    border-radius:50%}
+#brazil .circle:before,#brazil .circle:after{
+    width:90px;height:40px;
+    transform:rotate(14deg)}
+#brazil .circle:before{z-index:3;content:'';margin-top:-20px;margin-left:-45px;background:#fff}
+#brazil .circle:after{z-index:4;content:'';margin-top:-10px;margin-left:-48px;background-color:#1651b8}
+
+
+/* ---------------------- */
+
+#armenia{
+    margin: 20px auto;
+    padding: 100px;
+    width: 30%;
+    position: relative;
+    background-color: rgb(63, 22, 139);
+
+}
+#armenia:before{
+    width: 100%;
+    height: 33.33%;
+    position: absolute;
+    content: " ";
+    background-color: rgb(122, 5, 5);
+    top: 0;
+    left: 0;
+
+}
+#armenia:after{
+    width: 100%;
+    height: 33.33%;
+    position: absolute;
+    content: " ";
+    bottom: 0;
+    left: 0;
+    background-color: rgb(146, 146, 19);
+    
+}
+
+
+/* ------------------- */
+
+#botswana{
+    margin: 20px auto;
+    position: relative;
+    padding: 90px;
+    width: 30%;
+    background-color: rgb(17, 102, 141);
+}
+#botswana:after{
+    width: 100%;
+    height: 33.33%;
+    content: " ";
+    position: absolute;
+    background-color: rgb(240, 237, 243);
+    top: 70px;
+    left: 0;
+}
+.middle-line{
+    position: absolute;
+    width: 95%;
+    z-index: 1;
+    border: 10px solid;
+    top:90px;
+    left: 0;
+}
