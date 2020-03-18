@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawit Teklu</title>
+    <style>
+section{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    padding: 5px 30px;
+
+}
+article{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+}
+.title{
+    font-size: 23px;
+    font-weight: bold;
+    margin: 0 40px;
+}
+.date{
+    font-style: italic;
+    font-size: 1.5em;
+    text-transform: lowercase;
+    margin: 0 50px;
+    
+}
+
+div.navigation{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+
+}
+.navigation div{
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 2em;
+}
+a{
+    text-decoration: none;
+}
+.content{
+    margin: 0 40px;
+}
+#listOne,#listthree,#paragraphTwo{columns: 2;}
+
+.references{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    </style>
+</head>
+<body>
+<!-- navigation start -->
+
+    
+<div class="navigation">
+    <div><a href="home.html">Home</a></div>
+    <div><a href="contact.html">Contact</a></div>
+    <div><a href="blog.html">Blog</a></div>
+</div>
+
+<!--our blog-->
+</header>
+<div id="content" class="">
+<section>
+    <p class="title">
+        Does it matter using relative units in CSS? 
+    </p>
+        <article class="content">
+            <h3>Units in CSS</h3>
+
+    <ul id ="listOne">
+        <li>
+            <h4>There are two measurement units in CSS those are:</h4>
+            <ul>
+                <li>
+                    Relative measurements and 
+                </li>
+                <li>
+                    Absolute measurements.
+                   in this section only Relative measurements and the matter of whether using or not them will be discussed.
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h4>Relative measurements.</h4>
+        </li>
+        <ul>Relative measurement units are based on or relative to other property of elements.
+            Basically there four classes of Relative measurements. Those are:
+            <li>based on the view port property(vh,vw,vmax and vmin) these are depend on the broswer’s width or height property or simply the viewport of the browser dimensions. All divide the viewport in to 100 by 100 grid.</li>
+            <ul>
+                <li>vw (viewport width) this relative to the viewport width eg 50 vm means half of the browser viewport width dimension.</li>
+                <li>vh (viewport-width) this relative to the viewport height eg 50 vh means half of the browser viewport height dimension.</li>
+                <li>Vmax (viewport maximum) this is relative to the maximum dimension of the browser’s viewport either its width or height.
+                </li>
+                <li>Vmin (viewport minimum) this is relative to the minimum dimension of the browser’s viewport either its width or height.</li>
+            </ul>
+            
+            <li>based on the currently declared font-attributes (em,rem,ex,ch), this measurement units are relative to the font-attributes to the root , and parent element and character sizes.</li>
+             <ul>
+                 <li>Em – this measurement unit is relative to the font-size of the parent element. The values are cascaded to all the children if exists, this makes unexpected and unintended result for the author.</li>
+                 <li>Rem – this measurement unit is relative to the font-size the root element or simply which is the HTML</li>
+                 <li>ex – this is relative to x-height of character or the current font-family.</li>
+                 <li>Ch – this measurement unit is relative to the 0-height of characters</li>
+             </ul>
+            <li>based on the parent dimensions</li>
+            <ul>
+                <li>Relative to their parent width or height.</li>
+            </ul>
+        </ul>
+        
+    </ul>
+
+<h3>The main reason of using relative measurement units in website devlopment.</h3>
+ <h4>my answer for the question in the title at the beggining is yes, because using relative units are important: </h4>
+    <ul id = "listTwo">
+        <li>to maintain responsiveness and flexibility of the site. Because relative units allow the element’s size ,text-size and spacing to grow or shrink proportionally to the font-size of the parent or root elements.</li>
+        <li>We can not maintain responsiveness of the page using absolute unit measurements,such as pixels, because they stay the same as declared irrespective of the device the page will be displayed.</li>
+        <li>If the default font-size has given to the browser, it is not mandatory to zoom in the browser to be able to read a website,because the content of a website with relative units would increase with your preferred font size.</li>
+        <li>General speaking to make the website more responsive, using relative units such as em and rem for text elements is very necessary.</li>
+    </ul>
+        </article>
+        <p class="date ">
+            Month march 18,2020,3:00 am
+        </p>
+</section>
+<section>
+    <p class="title" id="secondPost">
+        Default browser font-size
+    </p>
+        <article class="content"></p>
+           <h4>
+            We said 16px is default browser width so what does it mean when we say 200px ? How
+            does the browser interpret that ?
+           </h4> 
+            
+            <p id="paragraphTwo">
+                default browser’s font-size is 16px for most browsers. That means the text under the page or all of the entire html element is 16px unless any font-attribute is introduced. Even though this is the default browsers font-size it can be changed based on the users preferences.for example partially  sighted ones are making this to little bigger.
+            When making the default font-size to 200px (introducing css i.e. html{font-size:200px) 
+            making the text size to grow to very large percentage. i.e. 16px is to 100% and 200px means (200*100)16 = 1250%
+            </p> 
+        </article>
+        <p class="date ">
+            Month march 18,2020,7:00 am
+        </p>
+</section>
+<!-- this is the third post -->
+<section>
+    <p class="title">
+        The specific changes in CSS3
+    </p>
+        <article class="content"></p>
+    
+
+
+    <h4>here are the most awesome css3 features that most modern browsers can handle
+    </h4>
+    
+    <ul id="listthree">
+        <li> <strong>CSS Animations and Transitions:</strong> these are available in all major browsers. There are two ways to create CSS animations:
+            <ol>
+                <li>using the transition declaration and this is triggered by mouse or hover action or using javascript</li>
+                <li>using the code @keyframe rule, and this is not depend on the user actions</li>
+            </ol>
+        </li>
+        <li>Calculating values with calc(), it allows to do simple arithmetic calculations to specify value for attributes of elements.</li>
+        <li>Advanced Selectors, CSS3 introduced a number of powerful selectors that can make a layouts cleaner.</li>
+        <li>Generated content and counters, ::before and ::after pseudo elements, this elements use less HTML to achieve the same layouts. CSS3 also gives pseudo elements to counters which can be incremented width CSS rule.
+        </li>
+        <li>Webfonts, CSS3 introduced many font-services like google Fonts , typekit and fontawesome for icons.
+        </li>
+        <li>Box Sizing , it makes life easier by removing extra padding and margin values added to the element’s size.</li>
+        <li>Border-images, this property allows to display custom designed borders around elements.
+        </li>
+        <li>Media Queries. This property helps the website to be responsive and which adapt to the type of devices. It is simple to use all the need is to enclose CSS styles in a block guarded bu a code @media rule.
+        </li>
+        <li>Multiple backgrounds, using this property the designers can achieve very interesting effects.
+        </li>
+        <li>CSS columns, CSS3 provides a way to display columns using the property columns rule.
+        </li>
+        <li>Gradients ,Gradients give web
+            designers the power to create smooth transitions between colors without having to resort to images.
+     </li>
+        <li>CSS 3D Transforms, css3 offers powerful features to designers and developers that can attract the users.</li>
+    </ul>
+        </article>
+        <p class="date ">
+            Month march 18,2020,11:00 am
+        </p>
+</section>
+</div>
+    <div class="references">
+        <h3>References</h3>
+        <a href="https://tutorialzine.com/">Link one</a>
+        <a href="#">Link two</a>
+        <a href="">Link three</a>
+    </div>
+</body>
+</html>
