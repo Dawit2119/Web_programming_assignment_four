@@ -34,14 +34,12 @@ input[type="text"]{
     background-color: gray;
 }
 
-div:nth-child(1){
-    background-color: rgb(43, 11, 187);
-}
 
-div:nth-child(5) p{
+
+div:nth-child(6) p{
     background-color: pink;
 }
-div:nth-child(5) p:nth-child(3){
+div:nth-child(6) p:nth-child(3){
     border: 5px solid white;
 }
 em{
@@ -65,4 +63,18 @@ h1:hover{
 }
 a:visited{
     color: gray;
+}
+.container{
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    
+}
+.container div{
+    margin: 4em;
+}
+.container >div>a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: blue;
 }

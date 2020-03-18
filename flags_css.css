@@ -435,9 +435,29 @@ border-bottom:80px solid transparent;
 }
 .middle-line{
     position: absolute;
-    width: 95%;
+    width: 97%;
     z-index: 1;
     border: 10px solid;
     top:90px;
     left: 0;
+}
+
+.containerTwo{
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    
+}
+.containerTwo div{
+    margin: 4em;
+}
+.containerTwo >div>a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: blue;
+}
+h1
+{
+    text-align: center;
+    color: rgb(181, 155, 199);
 }
