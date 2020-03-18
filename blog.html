@@ -64,7 +64,6 @@ h3{
 .references a{
     margin-left: 2em;
 }
-ul{list-style-type:square;}
 
 #listthree{list-style-type: none;}
 body{background-color: gray;}
@@ -110,22 +109,22 @@ body{background-color: gray;}
             <h4>Relative measurements.</h4>
         </li>
         <ul>Relative measurement units are based on or relative to other property of elements.
-            Basically there four classes of Relative measurements. Those are:
-            <li>based on the view port property(vh,vw,vmax and vmin) these are depend on the broswer’s width or height property or simply the viewport of the browser dimensions. All divide the viewport in to 100 by 100 grid.</li>
+            Basically there three classes of Relative measurements. Those are:
+            <li>based on the view port property(vh,vw,vmax and vmin) these are depend on the broswer’s width or height property or simply the viewport of the browser dimensions. All divide the viewport into 100 by 100 grid.</li>
             <ul>
-                <li>vw (viewport width) this relative to the viewport width eg 50 vm means half of the browser viewport width dimension.</li>
-                <li>vh (viewport-width) this relative to the viewport height eg 50 vh means half of the browser viewport height dimension.</li>
-                <li>Vmax (viewport maximum) this is relative to the maximum dimension of the browser’s viewport either its width or height.
+                <li>vw (viewport width) this relative to the viewport width. eg 50vm means half of the browser viewport width dimension.</li>
+                <li>vh (viewport-width) this relative to the viewport height. eg 50vh means half of the browser viewport height dimension.</li>
+                <li>vmax (viewport maximum) this is relative to the maximum dimension of the browser’s viewport either its width or height.
                 </li>
-                <li>Vmin (viewport minimum) this is relative to the minimum dimension of the browser’s viewport either its width or height.</li>
+                <li>vmin (viewport minimum) this is relative to the minimum dimension of the browser’s viewport either its width or height.</li>
             </ul>
             
-            <li>based on the currently declared font-attributes (em,rem,ex,ch), this measurement units are relative to the font-attributes to the root , and parent element and character sizes.</li>
+            <li>based on the currently declared font-attributes (em,rem,ex,ch), this measurement units are relative to the font-attributes to the root ,parent element or character sizes.</li>
              <ul>
-                 <li>Em – this measurement unit is relative to the font-size of the parent element. The values are cascaded to all the children if exists, this makes unexpected and unintended result for the author.</li>
-                 <li>Rem – this measurement unit is relative to the font-size the root element or simply which is the HTML</li>
+                 <li>em – this measurement unit is relative to the font-size of the parent element. The values are cascaded to all the children if exists, this makes unexpected and unintended result for the author.</li>
+                 <li>rem – this measurement unit is relative to the font-size the root element or simply which is the HTML</li>
                  <li>ex – this is relative to x-height of character or the current font-family.</li>
-                 <li>Ch – this measurement unit is relative to the 0-height of characters</li>
+                 <li>ch – this measurement unit is relative to the 0-height of characters</li>
              </ul>
             <li>based on the parent dimensions</li>
             <ul>
